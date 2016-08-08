@@ -60,19 +60,20 @@
       <string>variable.parameter.wrapperlog</string>
     </dict>
 
+    <!-- First line of exception -->
     <dict>
       <key>match</key>
       <string>^.*(Exception).*$</string>
       <key>name</key>
-      <string>comment.exception.wrapperlog</string>
+      <string>string.single.wrapperlog</string>
     </dict>
     
-    <!-- exception stacktrace starting with "at" -->
+    <!-- Exception stacktrace starting with "at" -->
     <dict>
       <key>match</key>
       <string>\tat\s.+</string>
       <key>name</key>
-      <string>comment.exception.wrapperlog</string>
+      <string>string.single.wrapperlog</string>
     </dict>
   </array>
   <key>scopeName</key>
