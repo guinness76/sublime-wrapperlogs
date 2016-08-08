@@ -1,0 +1,18 @@
+# Example testing
+
+W [S.InternalProviderSettingsRecord] [20:40:53]: Default datasource not found for internal tag provider "default" 
+
+num x= 501
+singlequote= 'bdfdsf'
+doublequote= "sdfdf"
+
+W [m.T.W.WSConnection            ] [23:41:31]: <- incoming local='aa' remote='bb' method=onCC: Received msg:opCode=MSG_SEND, subCode=0, gan-remote-connection-url=http://localhost:8090/main/system, gan-remote-connection-id=agent-ide-8090, gan-connection-session-id=2119567619
+
+I [I.Manager                     ] [20:40:53]: Skipping schema feature 'INTERNAL_SQL_TAGS' for module 'UPDATE_SC_PROV_ID' - Does not apply to this db type. 
+
+I [G.Project[[global]]           ] [20:41:47]: Gateway scripts shutting down... 
+
+E [m.S.ServiceManager            ] [23:45:01]: Error retrieving service state from server '_0:0:ide_controller'
+java.util.concurrent.ExecutionException: [queueId=_default_, targetIntent=_services.getstate_, msgData=com.inductiveautomation.eam.gateway.services.StatusEventService
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)

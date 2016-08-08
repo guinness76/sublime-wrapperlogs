@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>keyEquivalent</key>
+  <string>^~M</string>
+  <key>firstLineMatch</key>
+  <string>[A-Z] \[[\w|\.]+\s+\]</string>
+  <key>name</key>
+  <string>Ignition Wrapper Log</string>
+  <key>patterns</key>
+  <array>
+    <!-- Beginning of line, where log level is first char and logger name is in [ ] -->
+    <dict>
+      <key>match</key>
+      <string>[A-Z] \[[\w|\.]+\s*\]</string>
+      <key>name</key>
+      <string>entity.name.function.wrapperlog</string>
+    </dict>
+    
+    <!-- Timestamp -->
+    <dict>
+      <key>match</key>
+      <string>\[\d\d:\d\d:\d\d\]</string>
+      <key>name</key>
+      <string>comment.time.wrapperlog</string>
+    </dict>
+    
+    <!-- Highlight single quote text -->
+    <dict>
+      <key>match</key>
+      <string>\'[^\'\r\n]*\'</string>
+      <key>name</key>
+      <string>string.single.wrapperlog</string>
+    </dict>
+    
+    <!-- Highlight double quote text -->
+    <dict>
+      <key>match</key>
+      <string>\"[^\"\r\n]*\"</string>
+      <key>name</key>
+      <string>string.double.wrapperlog</string>
+    </dict>
+
+  <!-- Highlight isolated numbers -->
+  <!--
+    <dict>
+      <key>match</key>
+      <string>[0-9]*\.?[0-9]*</string>
+      <key>name</key>
+      <string>constant.numeric.wrapperlog</string>
+    </dict>  
+  -->
+
+    <!-- Value portion of key=value highlighting -->
+    <dict>
+      <key>match</key>
+      <string>\=[\S]*\s</string>
+      <key>name</key>
+      <string>variable.parameter.wrapperlog</string>
+    </dict>
+
+    <dict>
+      <key>match</key>
+      <string>^.*(Exception).*$</string>
+      <key>name</key>
+      <string>comment.exception.wrapperlog</string>
+    </dict>
+    
+    <!-- exception stacktrace starting with "at" -->
+    <dict>
+      <key>match</key>
+      <string>\tat\s.+</string>
+      <key>name</key>
+      <string>comment.exception.wrapperlog</string>
+    </dict>
+  </array>
+  <key>scopeName</key>
+  <string>source.wrapperlog</string>
+  <key>uuid</key>
+  <string>fff9ed88-128a-4fe4-a7cd-7c3c3c433502</string>
+</dict>
+</plist>
