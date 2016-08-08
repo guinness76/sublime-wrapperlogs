@@ -6,6 +6,10 @@ num x= 501
 singlequote= 'bdfdsf'
 doublequote= "sdfdf"
 
+# 7.8
+INFO   | jvm 1    | 2016/05/18 11:05:44 | INFO  [Manager                       ] [11:05:44,751]: Skipping schema feature 'ignition.projectmanager' for module 'projects-publishing-1' - Does not apply to this db type.
+
+INFO [LocalDBManagerImpl            ] [11:05:25,361]: internal database "config.idb" started up successfully.
 W [m.T.W.WSConnection            ] [23:41:31]: <- incoming local='aa' remote='bb' method=onCC: Received msg:opCode=MSG_SEND, subCode=0, gan-remote-connection-url=http://localhost:8090/main/system, gan-remote-connection-id=agent-ide-8090, gan-connection-session-id=2119567619
 
 I [I.Manager                     ] [20:40:53]: Skipping schema feature 'INTERNAL_SQL_TAGS' for module 'UPDATE_SC_PROV_ID' - Does not apply to this db type. 

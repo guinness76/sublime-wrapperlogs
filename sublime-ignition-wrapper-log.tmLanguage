@@ -5,7 +5,7 @@
   <key>keyEquivalent</key>
   <string>^~M</string>
   <key>firstLineMatch</key>
-  <string>[A-Z] \[[\w|\.]+\s+\]</string>
+  <string>[A-Za-z]+[\s]{1,2}\[[\w|\.]+\s+\]</string>
   <key>name</key>
   <string>Ignition Wrapper Log</string>
   <key>patterns</key>
@@ -13,7 +13,7 @@
     <!-- Beginning of line, where log level is first char and logger name is in [ ] -->
     <dict>
       <key>match</key>
-      <string>[A-Z] \[[\w|\.]+\s*\]</string>
+      <string>[A-Za-z]+[\s]{1,2}\[[\w|\.]+\s*\]</string>
       <key>name</key>
       <string>entity.name.function.wrapperlog</string>
     </dict>
@@ -21,7 +21,7 @@
     <!-- Timestamp -->
     <dict>
       <key>match</key>
-      <string>\[\d\d:\d\d:\d\d\]</string>
+      <string>\[\d\d:\d\d:\d\d\,{0,1}[\d]*\]</string>
       <key>name</key>
       <string>comment.time.wrapperlog</string>
     </dict>
