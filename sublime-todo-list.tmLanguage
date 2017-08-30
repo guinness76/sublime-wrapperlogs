@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>keyEquivalent</key>
+  <string>^~M</string>
+  <key>word_wrap</key>
+  <string>true</string>
+  <key>firstLineMatch</key>
+  <string>[A-Za-z]+[\s]{1,2}\[[\w|\.]+\s+\]</string>
+  <key>name</key>
+  <string>TODO List</string>
+  <key>patterns</key>
+  <array>
+
+        <!-- 
+    plain red: string.single
+    plain green: comment.block
+    plain black: storage.type
+    plain blue: meta.tag  
+    italic blue: variable.parameter, variable.other
+    bold light blue: support.class.import
+    bold black: entity.name.tag
+    bold dark blue: keyword.adb
+    bold green: support.constant
+    -->
+
+    <dict>
+      <key>match</key>
+      <string>TODO</string>
+      <key>name</key>
+      <string>meta.tag.todolist</string>
+    </dict>
+
+    <dict>
+      <key>match</key>
+      <string>FIXED|DONE</string>
+      <key>name</key>
+      <string>comment.block.todolist</string>
+    </dict>
+
+    <dict>
+      <key>match</key>
+      <string>BUG</string>
+      <key>name</key>
+      <string>string.single.todolist</string>
+    </dict>
+
+    <dict>
+      <key>match</key>
+      <string>TEST</string>
+      <key>name</key>
+      <string>keyword.adb.todolist</string>
+    </dict>
+
+  </array>
+  <key>scopeName</key>
+  <string>source.todolist</string>
+  <key>uuid</key>
+  <string>564593c1-a6ea-47c9-8b0b-4fc11c2d7698</string>
+</dict>
+</plist>
