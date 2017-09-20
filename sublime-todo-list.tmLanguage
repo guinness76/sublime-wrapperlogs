@@ -34,14 +34,14 @@
 
     <dict>
       <key>match</key>
-      <string>FIXED|DONE</string>
+      <string>FIXED|DONE|PASS</string>
       <key>name</key>
       <string>comment.block.todolist</string>
     </dict>
 
     <dict>
       <key>match</key>
-      <string>BUG</string>
+      <string>BUG|FAIL</string>
       <key>name</key>
       <string>string.single.todolist</string>
     </dict>
