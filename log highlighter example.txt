@@ -20,3 +20,15 @@ E [m.S.ServiceManager            ] [23:45:01]: Error retrieving service state fr
 java.util.concurrent.ExecutionException: [queueId=_default_, targetIntent=_services.getstate_, msgData=com.inductiveautomation.eam.gateway.services.StatusEventService
 	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
 	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+
+Exception in thread "AWT-EventQueue-0" java.lang.IllegalStateException: Attempt to mutate in notification
+	at java.desktop/javax.swing.text.AbstractDocument.writeLock(Unknown Source)
+	at java.desktop/javax.swing.text.AbstractDocument.replace(Unknown Source)
+	at java.desktop/javax.swing.text.JTextComponent.setText(Unknown Source)
+	at com.inductiveautomation.factorysql.designer.model.controls.ConfigTextField.propertyChange(ConfigTextField.java:62)
+	at com.inductiveautomation.factorysql.designer.model.binders.PropertyBinder.propertyChange(PropertyBinder.java:90)	
+	at java.desktop/java.beans.PropertyChangeSupport.fire(Unknown Source)
+	at java.desktop/java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	at java.desktop/java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	at com.inductiveautomation.factorysql.designer.model.controllers.AbstractConfigController.firePropertyChange(AbstractConfigController.java:43)
+	at com.inductiveautomation.factorysql.designer.model.controllers.DelegateConfigController.propertyChange(DelegateConfigController.java:43)	
