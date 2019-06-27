@@ -17,6 +17,9 @@ The regex is in sublime-ignition-wrapper-log.tmLanguage and the color settings a
 
 Open Regex Tester in Intellij and create regular expressions as needed. Within Sublime Text, navigate to Preferences -> Browse Packages. This will open a Packages folder in the file explorer. Open sublime-ignition-wrapper-log.tmLanguage and add the regexes there. Restart Sublime Text to see the changes. Be sure to copy sublime-ignition-wrapper-log.tmLanguage to the development folder for archiving within Git.
 
+To push to git:
+git push https://guinness76:THEPASSWORD@github.com/guinness76/sublime-wrapperlogs
+
 Eiffel.thTheme color scheme (paste into Slack to see the actual colors)
 #CD0000
 #C5060B
