@@ -71,14 +71,14 @@
     <!-- Exception stacktrace starting with "at", but without com.inductiveautomation in the string -->
     <dict>
       <key>match</key>
-      <string>at\s(?!com.inductiveautomation).*</string>
+      <string>\tat\s(?!com.inductiveautomation).*</string>
       <key>name</key>
       <string>string.single.wrapperlog</string>
     </dict>
     <!-- Exception stacktrace starting with "at", and with com.inductiveautomation in the string -->
     <dict>
       <key>match</key>
-      <string>at\scom.inductiveautomation.+</string>
+      <string>\tat\scom.inductiveautomation.+</string>
       <key>name</key>
       <string>support.class</string>
     </dict>
