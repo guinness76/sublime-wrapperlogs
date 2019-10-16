@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>keyEquivalent</key>
+  <string>^~M</string>
+  <key>firstLineMatch</key>
+  <string>[A-Za-z]+[\s]{1,2}\[[\w|\.]+\s+\]</string>
+  <key>name</key>
+  <string>Intellij stack dump</string>
+  <key>patterns</key>
+  <array>
+    <!-- 
+    plain red: string.single
+    plain green: comment.block
+    plain black: storage.type
+    plain blue: meta.tag  
+    italic blue: variable.parameter, variable.other
+    bold dark red: support.class.import
+    bold black: entity.name.tag
+    bold dark blue: keyword.adb
+    bold green: support.constant
+    -->
+
+    <!-- Comment line -->
+    <dict>
+      <key>match</key>
+      <string>^\#.*</string>
+      <key>name</key>
+      <string>comment.block.ijstack</string>
+    </dict>
+
+    <!-- Method name -->
+    <dict>
+      <key>match</key>
+      <string>^[A-Za-z0-9]+</string>
+      <key>name</key>
+      <string>meta.tag.ijstack</string>
+    </dict>
+
+    <!-- Line number -->
+    <dict>
+      <key>match</key>
+      <string>[0-9]+</string>
+      <key>name</key>
+      <string>keyword.adb.ijstack</string>
+    </dict>
+
+    <!-- Class name -->
+    <dict>
+      <key>match</key>
+      <string> [A-Za-z0-9.]+</string>
+      <key>name</key>
+      <string>string.single.ijstack</string>
+    </dict>
+
+    <!-- Class package -->
+    <dict>
+      <key>match</key>
+      <string>\(.*\)</string>
+      <key>name</key>
+      <string>storage.type.ijstack</string>
+    </dict>
+
+
+  </array>
+  <key>scopeName</key>
+  <string>source.wrapperlog</string>
+  <key>uuid</key>
+  <string>fff9ed88-128a-4fe4-a7cd-7c3c3c433501</string>
+</dict>
+</plist>
